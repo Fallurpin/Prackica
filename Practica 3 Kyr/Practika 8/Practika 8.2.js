@@ -14,3 +14,4 @@ for (let i = 0; i < numbers.length; i++) {
 
 };
 console.log("Измененный массив:", numbers);
+// Дмитрий Смирнов Исп 309
