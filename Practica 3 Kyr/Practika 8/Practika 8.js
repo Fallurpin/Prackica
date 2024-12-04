@@ -46,21 +46,19 @@ alert("Вы задумали число: " + origNumber);
 
 // Палиндром
 
-function isPalindrome(text) {
-  // Предобработка текста: удаление неалфавитных символов и приведение к нижнему регистру
-  const processedText = text.toLowerCase().replace(/[^a-zA-Z]/g, ''); //Изменено регулярное выражение
+function Pal(text) {
+  const processedText = text.toLowerCase().replace(/[^a-zA-Z]/g, '');
 
   if (processedText.length === 0) {
-    return false; // Пустая строка не является палиндромом
+    return false;
   }
 
-  // Проверка на палиндром
   return processedText === processedText.split('').reverse().join('');
 }
 
 let name = prompt("Введите вашу фамилию:");
 
-if (isPalindrome(name)) {
+if (Pal(name)) {
   alert("Ваша фамилия — палиндром!");
 } else {
   alert("Ваша фамилия — не палиндром.");
